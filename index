@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TENACIOUS COMPOSITES Pvt. Ltd.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #003366;
+      --accent-color: #4CAF50;
+      --text-color: #333;
+      --light-bg: #f8f9fa;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--light-bg);
+      color: var(--text-color);
+      scroll-behavior: smooth;
+    }
+
+    header, footer {
+      background: var(--primary-color);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)),
+                  url('construction-bg.jpg') center/cover fixed;
+      padding: 8rem 2rem;
+      color: white;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      animation: slideIn 1s ease-out;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      font-weight: 300;
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    .section {
+      padding: 4rem 2rem;
+      margin: 2rem auto;
+      max-width: 1200px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease-out;
+    }
+
+    .section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 2rem;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 1px 10px rgba(0,0,0,0.05);
+    }
+
+    th, td {
+      padding: 1rem;
+      text-align: center;
+      transition: all 0.2s ease;
+    }
+
+    th {
+      background: var(--primary-color);
+      color: white;
+      font-weight: 600;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f8f9fa;
+    }
+
+    tr:hover td {
+      background: #e9ecef;
+      transform: translateX(10px);
+    }
+
+    h2 {
+      color: var(--primary-color);
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      position: relative;
+      display: inline-block;
+    }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: var(--accent-color);
+      animation: underlineExpand 0.8s ease-out;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #999;
+      border-radius: 2px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      height: 120px;
+      resize: vertical;
+    }
+
+    .submit-btn {
+      background-color: #003865;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background-color: #005a9e;
+    }
+
+
+    @keyframes slideIn {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes underlineExpand {
+      from { width: 0; }
+      to { width: 60px; }
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.5rem; }
+      .hero h2 { font-size: 1.5rem; }
+      .section { padding: 2rem 1rem; margin: 1rem; }
+      table { display: block; overflow-x: auto; white-space: nowrap; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TENACIOUS COMPOSITES Pvt. Ltd.</h1>
+    <p>Opp. Shradhha Petroleum, College Road, Nashik | Mon - Fri : 09.00 AM - 09.00 PM | +91- 9405896519</p>
+  </header>
+
+  <div class="hero">
+    <h1>Unleashing the Power of GFRP</h1>
+    <h2>A Revolution Beyond Steel</h2>
+  </div>
+
+  <div class="section">
+    <h2>Introducing GFRP Bars</h2>
+    <p>GFRP (Glass Fiber Reinforced Polymer) is a lightweight and strong composite used in construction. It offers superior strength, corrosion resistance, and flexibility compared to steel. GFRP bars replace steel rebars and are ideal for environments needing high durability and resistance to rust and chemicals.</p>
+  </div>
+
+  <div class="section">
+    <h2>Advantages of GFRP Bars</h2>
+    <div class="grid">
+      <div><strong>Stronger than Steel</strong><br/>GFRP is significantly stronger than steel in certain aspects.</div>
+      <div><strong>Up to 80% Lighter</strong><br/>Reduces material handling costs.</div>
+      <div><strong>30% Cost Savings</strong><br/>Cheaper than TMT bars in the long term.</div>
+      <div><strong>No Theft Risk</strong><br/>No resale value, minimizing theft on site.</div>
+      <div><strong>No Overlap Needed</strong><br/>Saves on labor and material.</div>
+      <div><strong>Rust Proof</strong><br/>No rusting unlike steel rebars.</div>
+      <div><strong>Highly Chemical Resistant</strong><br/>Ideal for marine and aggressive environments.</div>
+      <div><strong>Fatigue Resistance</strong><br/>20x fatigue resistance of steel.</div>
+      <div><strong>Tunnel Compatible</strong><br/>Corrosion-free and non-conductive.</div>
+    </div>
+  </div>
+
+
+  <div class="section">
+    <h2>Technical Comparison</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Properties of TMT Bars</th>
+          <th>GFRP</th>
+          <th>Comparison</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Tensile strength MPa</td><td>800-1100</td><td>Stronger</td></tr>
+        <tr><td>Weight/Meter 8mm</td><td>0.080kg</td><td>Lighter</td></tr>
+        <tr><td>Bar Length</td><td>upto 100 meters</td><td>Better improvement</td></tr>
+        <tr><td>Durability embedded</td><td>100+ years</td><td>More durable</td></tr>
+        <tr><td>Class II and IV</td><td>100+ years</td><td>More durable</td></tr>
+        <tr><td>Corrosion resistance</td><td>Yes</td><td>More durable</td></tr>
+        <tr><td>Electric conductivity</td><td>No</td><td>No accidents risk</td></tr>
+        <tr><td>Thermal conductivity</td><td>No</td><td>Does not dissipate heat</td></tr>
+        <tr><td>Concrete covering</td><td>20mm</td><td>Lower concrete volume</td></tr>
+        <tr><td>Shear Strength</td><td>170</td><td>Higher</td></tr>
+        <tr><td>Bond strength MPa/N/mm²</td><td>12.5</td><td>Lower</td></tr>
+        <tr><td>Compression MPa/N/mm²</td><td>450</td><td>Lower</td></tr>
+        <tr><td>Modulus of Elasticity (Gpa)</td><td>65</td><td>Lower</td></tr>
+        <tr><td>Eforigation (%)</td><td>4% (max.)</td><td>Lower</td></tr>
+        <tr><td>Density [ton/in³]</td><td>1.9</td><td>Lower</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Table of Substitution</h2>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="3">TMT/CRS/STAINLESS STEEL TMT BAR (500 GRADE)</th>
+          <th colspan="3">GFRP Equivalent</th>
+        </tr>
+        <tr>
+          <th>Diameter mm</th>
+          <th>Weight (12m) kg</th>
+          <th>Tensile strength N</th>
+          <th>Diameter mm</th>
+          <th>Weight (12m) kg</th>
+          <th>Tensile strength N</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>4</td><td>0.099</td><td>6300</td><td>4</td><td>0.021</td><td>8000</td></tr>
+        <tr><td>5</td><td>0.154</td><td>9800</td><td>5</td><td>0.030</td><td>13800</td></tr>
+        <tr><td>6</td><td>0.222</td><td>14150</td><td>6</td><td>0.051</td><td>21200</td></tr>
+        <tr><td>-</td><td>-</td><td>-</td><td>7</td><td>0.066</td><td>30200</td></tr>
+        <tr><td>8</td><td>0.399</td><td>25150</td><td>8</td><td>0.084</td><td>40700</td></tr>
+        <tr><td>10</td><td>0.617</td><td>39250</td><td>10</td><td>0.137</td><td>66400</td></tr>
+        <tr><td>12</td><td>0.888</td><td>56550</td><td>12</td><td>0.202</td><td>86546</td></tr>
+        <tr><td>-</td><td>-</td><td>-</td><td>13</td><td>0.250</td><td>103816</td></tr>
+        <tr><td>14</td><td>1.21</td><td>77000</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td>16</td><td>1.58</td><td>100500</td><td>16</td><td>0.360</td><td>165046</td></tr>
+        <tr><td>18</td><td>2</td><td>127000</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td>20</td><td>2.47</td><td>157000</td><td>20</td><td>0.620</td><td>268666</td></tr>
+        <tr><td>-</td><td>-</td><td>-</td><td>22</td><td>0.664</td><td>-</td></tr>
+        <tr><td>25</td><td>3.85</td><td>245500</td><td>25</td><td>0.907</td><td>483516</td></tr>
+        <tr><td>32</td><td>6.31</td><td>400500</td><td>32</td><td>1.284</td><td>-</td></tr>
+        <tr><td>36</td><td>7.99</td><td>509000</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td>40</td><td>9.87</td><td>628500</td><td>-</td><td>-</td><td>-</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Tenacious composites GFRP Rebars</h2>
+    <p>Superior quality GFRP reinforcement solutions offering:</p>
+    <ul>
+      <li>Exceptional corrosion resistance</li>
+      <li>High strength-to-weight ratio</li>
+      <li>Long-term durability</li>
+      <li>Customizable lengths up to 100 meters</li>
+      <li>Cost-effective alternative to traditional steel</li>
+    </ul>
+  </div>
+  
+  <h2>Contact Us</h2>
+
+  <form action="#" method="post">
+    <div class="form-group">
+      <input type="text" name="name" placeholder="Name" required>
+    </div>
+
+    <div class="form-group">
+      <input type="text" name="phone" placeholder="Phone Number" required>
+    </div>
+
+    <div class="form-group">
+      <input type="email" name="email" placeholder="Email" required>
+    </div>
+
+    <div class="form-group">
+      <select name="subject" required>
+        <option value="">Select Any</option>
+        <option value="inquiry">General Inquiry</option>
+        <option value="support">Support</option>
+        <option value="feedback">Feedback</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <textarea name="message" placeholder="Message" required></textarea>
+    </div>
+
+    <button type="submit" class="submit-btn">Submit</button>
+  </form>
+
+
+  <footer>
+    <p>&copy; 2025 Tenacious Composites | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.section').forEach(section => {
+      observer.observe(section);
+    });
+
+    document.querySelectorAll('tr').forEach(row => {
+      row.addEventListener('mouseenter', () => {
+        row.style.transform = 'scale(1.02)';
+      });
+      row.addEventListener('mouseleave', () => {
+        row.style.transform = 'scale(1)';
+      });
+    });
+  </script>
+</body>
+</html>
